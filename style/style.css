@@ -35,7 +35,7 @@ main #produtos_em_alta .desconto h3{
     background-color:  #E7FF86;
     text-align: center;
     padding: 6px;
-    top: 160px;
+    top: 90px;
     left: 35px;
     color: #474747;
     font-weight: 700px;
@@ -49,8 +49,8 @@ main #produtos_em_alta .desconto2 h3{
     background-color:  #E7FF86;
     text-align: center;
     padding: 6px;
-    top: 160px;
-    left: 380px;
+    top: 90px;
+    left: 465px;
     color: #474747;
     font-weight: 700px;
 }
@@ -87,9 +87,9 @@ main #produtos_em_alta .container a {
     color: black;
 }
 main #produtos_em_alta .produtos {
-    width: 300px;
-    height: 300px;
-    margin-top: 150px;
+    width: 400px;
+    height: 400px;
+    margin-top: 80px;
 }
 main #produtos_em_alta .produtos strike{
     text-decoration: line-through;
@@ -99,12 +99,12 @@ main #produtos_em_alta .produtos img {
     background-color: #FFF;
     border-radius: 5px;
     display: block;
-    width: 110%;
+    width: 100%;
     padding: 30px;
 }
 main #produtos_em_alta .produtos h3, main #produtos_em_alta .produtos
 main #produtos_em_alta .produtos h2, main #produtos_em_alta .produtos h1 {
-    margin-top: 20px;
+    margin-top: 15px;
 } 
 
 
@@ -128,29 +128,28 @@ main #banner_rodape .container .imagem {
     border-radius: 8px;
     position: relative;
     z-index: 0;
-    margin-left: 104px;
 }
 main #banner_rodape .container .imagem .overlay {
     width: 100%;
     height: 100%;
 }
 main #banner_rodape .container .imagem .overlay::after{
-  content: ""; /* Adiciona essa linha */
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background-image: linear-gradient(to bottom, #4200FF25
-  , white);
-  right: 150px;
-  top: -200px;
-  z-index: 0;
+    content: ""; /* Adiciona essa linha */
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #4200FF25
+    , white);
+    right: 150px;
+    top: -200px;
+    z-index: 0;
 }
 main #banner_rodape .container .imagem img {
     position: absolute;
-    width: 95%;
+    width: 100%;
     right: 110px;
-    top: -150px;
+    top: -140px;
     z-index: 1;
 }
 main #banner_rodape .container .text {
@@ -213,111 +212,109 @@ main #banner_rodape .container .text button:hover {
     font-weight: 700;
 }
 
+/* COLECAO DESTAQUE */
+
+#colections {
+    background-color: #f9f8fe;
+    padding: 38px 100px;
+}
+
+#colections h5 {
+    color: #474747;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .75px;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+
+#colections h5.center {
+    text-align: center;
+}
+
+#colections .destaque {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+#colections .destaque li {
+    background-color: #d8e3f2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: calc(33.33% - 8px);
+}
+
+#colections .destaque li .content {
+    left: 0;
+    padding-left: 30px;
+    padding-top: 34px;
+    position: absolute;
+    top: o;
+}
+
+#colections .destaque li .content span {
+    background-color: #e7ff86;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .75px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+#colections .destaque li .content h4 {
+    color: #1f1f1f;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+#colections .destaque li .content a{
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    color: #c92071;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 48px;
+    padding: 0 40px;
+    transition: .2s;
+}
+
+#colections .destaque li .content a:hover {
+    background-color: #7e7d7dd2;
+    color: white;
+}
+
+#colections .icons {
+    display: flex;
+    justify-content: center;
+}
+
+#colections .icons li {
+    margin: 0 24px;
+    text-align: center;
+}
+
+#colections .icons li .icon.active {
+    box-shadow: 0 4px 25px rgba(0,0,0,.05);
+}
+
+#colections .icons li h6 {
+    color: #474747;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .75px;
+    line-height: 22px;
+}
 
 /*ESPAÇO PARA O FOOTER*/
-footer .container {
-  padding-left: 20px;
-  width: 100%;
-  height: 700px;
-  background-color: #1f1f1f;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-footer .container .bloco_um {
-    width: 400px;
-  height: 50%;
-  color: white;
-  position: relative;
-  margin-top: 80px;
-  margin-right: 10px;
-}
-footer .bloco_um .titulo {
-  width: 100%;
-  display: flex;
-  justify-content: left;
-}
-footer .bloco_um .titulo img {
-  width: 8%;
-  height: 8%;
-  margin-right: 10px;
-}
-footer .bloco_um h1 {
-  align-items: center;
-  margin-bottom: 40px;
-  font-size: 37px;
-}
-footer .bloco_um p {
-  margin-bottom: 40px;
-  font-size: 18px;
-}
-footer .bloco_um a i {
-  color: white;
-  letter-spacing: 25px;
-  transition-duration: 1s;
-}
-
-footer .bloco_dois,
-footer .bloco_tres {
-  margin-top: 80px;
-  width: 250px;
-  height: 50%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-footer .bloco_dois h2,
-footer .bloco_tres h2,
-footer .bloco_quatro h2 {
-  font-size: 18px;
-  margin-bottom: 40px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
-footer .bloco_dois a,
-footer .bloco_tres a {
-  color: white;
-  line-height: 42px;
-  font-size: 18px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 48px;
-}
-footer .bloco_quatro {
-  margin-top: 80px;
-  width: 320px;
-  height: 50%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-footer .bloco_quatro address,
-footer .bloco_quatro p {
-  width: 80%;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-}
-footer .bloco_quatro p {
-  margin-top: 30px;
-}
-footer hr {
-  width: 90%;
-  height: 1px;
-  border: 1px solid white;
-  border-radius: 8px;
-  margin-top: 100px;
-  margin-bottom: 10px;
-  color: white;
-}
-footer .digital {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  color: white;
-}
